@@ -1,0 +1,14 @@
+{
+  "completed": true,
+  "duration": "0:04:47.401255",
+  "best_sharpe": -31.076759415462085,
+  "best_model_path": "models/checkpoints/checkpoint_epoch_003_score_-31.0768_20250805_001528.pt",
+  "final_epoch": 150,
+  "training_history": {
+    "epochs": 150,
+    "final_train_loss": 0.9526577353477478,
+    "final_val_loss": 0.9541026949882507,
+    "best_val_sharpe": -31.076759415462085
+  },
+  "config": {}
+}

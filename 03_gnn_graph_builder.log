@@ -1,0 +1,230 @@
+2025-08-04 14:22:00,619 - INFO - 🚀 Iniciando GraphBuilder...
+2025-08-04 14:22:00,619 - INFO - 🔧 GraphBuilder inicializado
+2025-08-04 14:22:00,619 - INFO -    📊 Configuración: 18 nodos, threshold=0.2
+2025-08-04 14:22:00,619 - INFO -    🎯 División tickers: Train(12), Val(3), Test(3)
+2025-08-04 14:22:00,619 - INFO - 🔗 Estableciendo conexión a base de datos...
+2025-08-04 14:22:00,619 - INFO - 🔄 Conectando a base de datos...
+2025-08-04 14:22:00,619 - INFO -    🔗 Host: localhost:5432
+2025-08-04 14:22:00,619 - INFO -    🗄️ Database: cryptonita_db2
+2025-08-04 14:22:00,619 - INFO -    👤 User: cryptonita_user
+2025-08-04 14:22:00,746 - INFO -    ✅ PostgreSQL: PostgreSQL 14.18 (Homebrew) on aarch64-apple-darwin24.4.0
+2025-08-04 14:22:00,746 - INFO - ✅ Conexión a base de datos establecida exitosamente
+2025-08-04 14:22:00,746 - INFO - 🏗️ Iniciando construcción de grafos...
+2025-08-04 14:22:00,746 - INFO - 🔄 Iniciando construcción de grafos...
+2025-08-04 14:22:00,746 - INFO - 🔄 Cargando características técnicas...
+2025-08-04 14:22:00,746 - INFO -    🎯 Tickers a cargar: ['BTC-USD', 'ETH-USD', 'BNB-USD', 'ADA-USD', 'SOL-USD', 'AVAX-USD', 'DOT-USD', 'LINK-USD', 'UNI-USD', 'AAVE-USD', 'MATIC-USD', 'LTC-USD', 'XRP-USD', 'DOGE-USD', 'ATOM-USD', 'ALGO-USD', 'FTM-USD', 'NEAR-USD']
+2025-08-04 14:22:00,750 - INFO - ✅ Tabla 'gnn_technical_features' encontrada
+2025-08-04 14:22:00,757 - INFO - ✅ Columnas disponibles: ['id', 'ticker', 'date', 'timestamp_utc', 'return_1d', 'return_3d', 'return_7d', 'return_30d', 'volatility_7d', 'volatility_30d', 'rsi_14', 'ema_12', 'ema_26', 'ema_50', 'macd', 'macd_signal', 'macd_histogram', 'bollinger_upper', 'bollinger_middle', 'bollinger_lower', 'bollinger_position', 'volume_sma_20', 'volume_ratio', 'momentum_5d', 'momentum_10d', 'calculation_timestamp']
+2025-08-04 14:22:00,762 - INFO - ✅ Total registros en tabla: 34996
+2025-08-04 14:22:00,762 - INFO - 🔄 Ejecutando query principal...
+2025-08-04 14:22:01,111 - INFO - ✅ Características técnicas cargadas exitosamente:
+2025-08-04 14:22:01,112 - INFO -    📊 Total registros: 34996
+2025-08-04 14:22:01,112 - INFO -    📅 Rango temporal: 2019-07-31 - 2025-07-29
+2025-08-04 14:22:01,112 - INFO -    🎯 Tickers únicos: ['AAVE-USD', 'ADA-USD', 'ALGO-USD', 'ATOM-USD', 'AVAX-USD', 'BNB-USD', 'BTC-USD', 'DOGE-USD', 'DOT-USD', 'ETH-USD', 'FTM-USD', 'LINK-USD', 'LTC-USD', 'MATIC-USD', 'NEAR-USD', 'SOL-USD', 'UNI-USD', 'XRP-USD']
+2025-08-04 14:22:01,113 - INFO -    🎯 Cantidad de tickers: 18
+2025-08-04 14:22:01,114 - INFO - 📊 Registros por ticker:
+2025-08-04 14:22:01,114 - INFO -       ADA-USD: 2191 registros
+2025-08-04 14:22:01,114 - INFO -       ETH-USD: 2191 registros
+2025-08-04 14:22:01,114 - INFO -       XRP-USD: 2191 registros
+2025-08-04 14:22:01,114 - INFO -       ALGO-USD: 2191 registros
+2025-08-04 14:22:01,114 - INFO -       LINK-USD: 2191 registros
+2025-08-04 14:22:01,114 - INFO -       LTC-USD: 2191 registros
+2025-08-04 14:22:01,114 - INFO -       DOGE-USD: 2191 registros
+2025-08-04 14:22:01,114 - INFO -       BTC-USD: 2191 registros
+2025-08-04 14:22:01,114 - INFO -       BNB-USD: 2191 registros
+2025-08-04 14:22:01,114 - INFO -       ATOM-USD: 2191 registros
+2025-08-04 14:22:01,114 - INFO -       MATIC-USD: 2064 registros
+2025-08-04 14:22:01,114 - INFO -       FTM-USD: 1994 registros
+2025-08-04 14:22:01,114 - INFO -       DOT-USD: 1804 registros
+2025-08-04 14:22:01,114 - INFO -       AVAX-USD: 1773 registros
+2025-08-04 14:22:01,114 - INFO -       AAVE-USD: 1761 registros
+2025-08-04 14:22:01,114 - INFO -       NEAR-USD: 1749 registros
+2025-08-04 14:22:01,114 - INFO -       SOL-USD: 1136 registros
+2025-08-04 14:22:01,114 - INFO -       UNI-USD: 805 registros
+2025-08-04 14:22:01,115 - WARNING - ⚠️ Valores nulos encontrados:
+2025-08-04 14:22:01,115 - WARNING -       return_3d: 34 nulos
+2025-08-04 14:22:01,115 - WARNING -       return_7d: 102 nulos
+2025-08-04 14:22:01,115 - WARNING -       return_30d: 493 nulos
+2025-08-04 14:22:01,115 - WARNING -       volatility_7d: 34 nulos
+2025-08-04 14:22:01,115 - WARNING -       volatility_30d: 238 nulos
+2025-08-04 14:22:01,115 - WARNING -       rsi_14: 85 nulos
+2025-08-04 14:22:01,115 - WARNING -       ema_12: 68 nulos
+2025-08-04 14:22:01,115 - WARNING -       ema_26: 187 nulos
+2025-08-04 14:22:01,115 - WARNING -       bollinger_position: 136 nulos
+2025-08-04 14:22:01,115 - WARNING -       volume_ratio: 136 nulos
+2025-08-04 14:22:01,115 - INFO - 🔄 Cargando correlaciones...
+2025-08-04 14:22:01,117 - INFO - ✅ Tabla 'gnn_correlations' encontrada
+2025-08-04 14:22:01,120 - INFO - ✅ Total registros en tabla: 29844
+2025-08-04 14:22:01,120 - INFO - 🔄 Ejecutando query de correlaciones...
+2025-08-04 14:22:01,172 - INFO - ✅ Correlaciones cargadas exitosamente:
+2025-08-04 14:22:01,172 - INFO -    📊 Total registros: 29844
+2025-08-04 14:22:01,172 - INFO -    📅 Rango temporal: 2019-08-29 - 2025-07-28
+2025-08-04 14:22:01,172 - INFO -    🎯 Fechas únicas: 217
+2025-08-04 14:22:01,174 - INFO -    🎯 Pares únicos: 153
+2025-08-04 14:22:01,174 - INFO - ✅ Mapeo de nodos creado:
+2025-08-04 14:22:01,174 - INFO -    TRAIN: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+2025-08-04 14:22:01,174 - INFO -    VAL: [12, 13, 14]
+2025-08-04 14:22:01,174 - INFO -    TEST: [15, 16, 17]
+2025-08-04 14:22:01,175 - INFO - 📅 Construyendo grafos para 2191 fechas
+2025-08-04 14:22:01,175 - INFO -    Procesando fecha 1/2191: 2019-07-31
+2025-08-04 14:22:01,186 - INFO -    Procesando fecha 101/2191: 2019-11-08
+2025-08-04 14:22:01,197 - INFO -    Procesando fecha 201/2191: 2020-02-16
+2025-08-04 14:22:01,207 - ERROR - ❌ Error crítico en main():
+2025-08-04 14:22:01,207 - ERROR -    💥 Tipo de error: TypeError
+2025-08-04 14:22:01,207 - ERROR -    💥 Mensaje: Invalid comparison between dtype=datetime64[ns] and Timestamp
+2025-08-04 14:22:01,207 - ERROR -    💥 Traceback completo:
+2025-08-04 14:22:01,211 - ERROR -       Traceback (most recent call last):
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 559, in _validate_comparison_value
+2025-08-04 14:22:01,211 - ERROR -           self._check_compatible_with(other)
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimes.py", line 542, in _check_compatible_with
+2025-08-04 14:22:01,211 - ERROR -           self._assert_tzawareness_compat(other)
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimes.py", line 784, in _assert_tzawareness_compat
+2025-08-04 14:22:01,211 - ERROR -           raise TypeError(
+2025-08-04 14:22:01,211 - ERROR -       TypeError: Cannot compare tz-naive and tz-aware datetime-like objects.
+2025-08-04 14:22:01,211 - ERROR -       The above exception was the direct cause of the following exception:
+2025-08-04 14:22:01,211 - ERROR -       Traceback (most recent call last):
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+2025-08-04 14:22:01,211 - ERROR -           other = self._validate_comparison_value(other)
+2025-08-04 14:22:01,211 - ERROR -                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 562, in _validate_comparison_value
+2025-08-04 14:22:01,211 - ERROR -           raise InvalidComparison(other) from err
+2025-08-04 14:22:01,211 - ERROR -       pandas.errors.InvalidComparison: 2020-04-11 00:00:00+00:00
+2025-08-04 14:22:01,211 - ERROR -       During handling of the above exception, another exception occurred:
+2025-08-04 14:22:01,211 - ERROR -       Traceback (most recent call last):
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/new_model/data/03_gnn_graph_builder.py", line 704, in main
+2025-08-04 14:22:01,211 - ERROR -           graph_splits = builder.build_all_graphs()
+2025-08-04 14:22:01,211 - ERROR -                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/new_model/data/03_gnn_graph_builder.py", line 551, in build_all_graphs
+2025-08-04 14:22:01,211 - ERROR -           graph = self.build_daily_graph(features_df, correlations_df, date, node_mapping)
+2025-08-04 14:22:01,211 - ERROR -                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/new_model/data/03_gnn_graph_builder.py", line 504, in build_daily_graph
+2025-08-04 14:22:01,211 - ERROR -           edge_index, edge_attr = self.build_edge_index_for_date(
+2025-08-04 14:22:01,211 - ERROR -                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/new_model/data/03_gnn_graph_builder.py", line 343, in build_edge_index_for_date
+2025-08-04 14:22:01,211 - ERROR -           past_dates = available_dates[available_dates <= date]
+2025-08-04 14:22:01,211 - ERROR -                                        ^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/.venv/lib/python3.11/site-packages/pandas/core/ops/common.py", line 76, in new_method
+2025-08-04 14:22:01,211 - ERROR -           return method(self, other)
+2025-08-04 14:22:01,211 - ERROR -                  ^^^^^^^^^^^^^^^^^^^
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/.venv/lib/python3.11/site-packages/pandas/core/arraylike.py", line 52, in __le__
+2025-08-04 14:22:01,211 - ERROR -           return self._cmp_method(other, operator.le)
+2025-08-04 14:22:01,211 - ERROR -                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+2025-08-04 14:22:01,211 - ERROR -           return invalid_comparison(self, other, op)
+2025-08-04 14:22:01,211 - ERROR -                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-04 14:22:01,211 - ERROR -         File "/Users/User/Library/CloudStorage/GoogleDrive-ignaciovct99@gmail.com/Mi unidad/Documentos/PROYECTOS/CRYPTONITA/cryptonita/.venv/lib/python3.11/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+2025-08-04 14:22:01,211 - ERROR -           raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+2025-08-04 14:22:01,211 - ERROR -       TypeError: Invalid comparison between dtype=datetime64[ns] and Timestamp
+2025-08-04 14:25:58,204 - INFO - 🚀 Iniciando GraphBuilder...
+2025-08-04 14:25:58,204 - INFO - 🔧 GraphBuilder inicializado
+2025-08-04 14:25:58,204 - INFO -    📊 Configuración: 18 nodos, threshold=0.2
+2025-08-04 14:25:58,204 - INFO -    🎯 División tickers: Train(12), Val(3), Test(3)
+2025-08-04 14:25:58,204 - INFO - 🔗 Estableciendo conexión a base de datos...
+2025-08-04 14:25:58,204 - INFO - 🔄 Conectando a base de datos...
+2025-08-04 14:25:58,204 - INFO -    🔗 Host: localhost:5432
+2025-08-04 14:25:58,204 - INFO -    🗄️ Database: cryptonita_db2
+2025-08-04 14:25:58,204 - INFO -    👤 User: cryptonita_user
+2025-08-04 14:25:58,248 - INFO -    ✅ PostgreSQL: PostgreSQL 14.18 (Homebrew) on aarch64-apple-darwin24.4.0
+2025-08-04 14:25:58,248 - INFO - ✅ Conexión a base de datos establecida exitosamente
+2025-08-04 14:25:58,248 - INFO - 🏗️ Iniciando construcción de grafos...
+2025-08-04 14:25:58,248 - INFO - 🔄 Iniciando construcción de grafos...
+2025-08-04 14:25:58,248 - INFO - 🔄 Cargando características técnicas...
+2025-08-04 14:25:58,248 - INFO -    🎯 Tickers a cargar: ['BTC-USD', 'ETH-USD', 'BNB-USD', 'ADA-USD', 'SOL-USD', 'AVAX-USD', 'DOT-USD', 'LINK-USD', 'UNI-USD', 'AAVE-USD', 'MATIC-USD', 'LTC-USD', 'XRP-USD', 'DOGE-USD', 'ATOM-USD', 'ALGO-USD', 'FTM-USD', 'NEAR-USD']
+2025-08-04 14:25:58,250 - INFO - ✅ Tabla 'gnn_technical_features' encontrada
+2025-08-04 14:25:58,258 - INFO - ✅ Columnas disponibles: ['id', 'ticker', 'date', 'timestamp_utc', 'return_1d', 'return_3d', 'return_7d', 'return_30d', 'volatility_7d', 'volatility_30d', 'rsi_14', 'ema_12', 'ema_26', 'ema_50', 'macd', 'macd_signal', 'macd_histogram', 'bollinger_upper', 'bollinger_middle', 'bollinger_lower', 'bollinger_position', 'volume_sma_20', 'volume_ratio', 'momentum_5d', 'momentum_10d', 'calculation_timestamp']
+2025-08-04 14:25:58,262 - INFO - ✅ Total registros en tabla: 34996
+2025-08-04 14:25:58,262 - INFO - 🔄 Ejecutando query principal...
+2025-08-04 14:25:58,588 - INFO - ✅ Características técnicas cargadas exitosamente:
+2025-08-04 14:25:58,588 - INFO -    📊 Total registros: 34996
+2025-08-04 14:25:58,589 - INFO -    📅 Rango temporal: 2019-07-31 - 2025-07-29
+2025-08-04 14:25:58,589 - INFO -    🎯 Tickers únicos: ['AAVE-USD', 'ADA-USD', 'ALGO-USD', 'ATOM-USD', 'AVAX-USD', 'BNB-USD', 'BTC-USD', 'DOGE-USD', 'DOT-USD', 'ETH-USD', 'FTM-USD', 'LINK-USD', 'LTC-USD', 'MATIC-USD', 'NEAR-USD', 'SOL-USD', 'UNI-USD', 'XRP-USD']
+2025-08-04 14:25:58,590 - INFO -    🎯 Cantidad de tickers: 18
+2025-08-04 14:25:58,591 - INFO - 📊 Registros por ticker:
+2025-08-04 14:25:58,591 - INFO -       ADA-USD: 2191 registros
+2025-08-04 14:25:58,591 - INFO -       ETH-USD: 2191 registros
+2025-08-04 14:25:58,591 - INFO -       XRP-USD: 2191 registros
+2025-08-04 14:25:58,591 - INFO -       ALGO-USD: 2191 registros
+2025-08-04 14:25:58,591 - INFO -       LINK-USD: 2191 registros
+2025-08-04 14:25:58,591 - INFO -       LTC-USD: 2191 registros
+2025-08-04 14:25:58,591 - INFO -       DOGE-USD: 2191 registros
+2025-08-04 14:25:58,591 - INFO -       BTC-USD: 2191 registros
+2025-08-04 14:25:58,591 - INFO -       BNB-USD: 2191 registros
+2025-08-04 14:25:58,591 - INFO -       ATOM-USD: 2191 registros
+2025-08-04 14:25:58,591 - INFO -       MATIC-USD: 2064 registros
+2025-08-04 14:25:58,591 - INFO -       FTM-USD: 1994 registros
+2025-08-04 14:25:58,591 - INFO -       DOT-USD: 1804 registros
+2025-08-04 14:25:58,591 - INFO -       AVAX-USD: 1773 registros
+2025-08-04 14:25:58,591 - INFO -       AAVE-USD: 1761 registros
+2025-08-04 14:25:58,591 - INFO -       NEAR-USD: 1749 registros
+2025-08-04 14:25:58,591 - INFO -       SOL-USD: 1136 registros
+2025-08-04 14:25:58,591 - INFO -       UNI-USD: 805 registros
+2025-08-04 14:25:58,592 - WARNING - ⚠️ Valores nulos encontrados:
+2025-08-04 14:25:58,592 - WARNING -       return_3d: 34 nulos
+2025-08-04 14:25:58,592 - WARNING -       return_7d: 102 nulos
+2025-08-04 14:25:58,592 - WARNING -       return_30d: 493 nulos
+2025-08-04 14:25:58,592 - WARNING -       volatility_7d: 34 nulos
+2025-08-04 14:25:58,592 - WARNING -       volatility_30d: 238 nulos
+2025-08-04 14:25:58,592 - WARNING -       rsi_14: 85 nulos
+2025-08-04 14:25:58,592 - WARNING -       ema_12: 68 nulos
+2025-08-04 14:25:58,592 - WARNING -       ema_26: 187 nulos
+2025-08-04 14:25:58,592 - WARNING -       bollinger_position: 136 nulos
+2025-08-04 14:25:58,592 - WARNING -       volume_ratio: 136 nulos
+2025-08-04 14:25:58,592 - INFO - 🔄 Cargando correlaciones...
+2025-08-04 14:25:58,593 - INFO - ✅ Tabla 'gnn_correlations' encontrada
+2025-08-04 14:25:58,643 - INFO - ✅ Total registros en tabla: 29844
+2025-08-04 14:25:58,643 - INFO - 🔄 Ejecutando query de correlaciones...
+2025-08-04 14:25:58,696 - INFO - ✅ Correlaciones cargadas exitosamente:
+2025-08-04 14:25:58,696 - INFO -    📊 Total registros: 29844
+2025-08-04 14:25:58,696 - INFO -    📅 Rango temporal: 2019-08-29 - 2025-07-28
+2025-08-04 14:25:58,696 - INFO -    🎯 Fechas únicas: 217
+2025-08-04 14:25:58,698 - INFO -    🎯 Pares únicos: 153
+2025-08-04 14:25:58,698 - INFO - ✅ Mapeo de nodos creado:
+2025-08-04 14:25:58,698 - INFO -    TRAIN: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+2025-08-04 14:25:58,698 - INFO -    VAL: [12, 13, 14]
+2025-08-04 14:25:58,698 - INFO -    TEST: [15, 16, 17]
+2025-08-04 14:25:58,698 - INFO - 📅 Construyendo grafos para 2191 fechas
+2025-08-04 14:25:58,698 - INFO -    Procesando fecha 1/2191: 2019-07-31
+2025-08-04 14:25:58,710 - INFO -    Procesando fecha 101/2191: 2019-11-08
+2025-08-04 14:25:58,722 - INFO -    Procesando fecha 201/2191: 2020-02-16
+2025-08-04 14:26:01,263 - INFO -    Procesando fecha 301/2191: 2020-05-26
+2025-08-04 14:26:06,856 - INFO -    Procesando fecha 401/2191: 2020-09-03
+2025-08-04 14:26:12,641 - INFO -    Procesando fecha 501/2191: 2020-12-12
+2025-08-04 14:26:18,519 - INFO -    Procesando fecha 601/2191: 2021-03-22
+2025-08-04 14:26:24,512 - INFO -    Procesando fecha 701/2191: 2021-06-30
+2025-08-04 14:26:30,361 - INFO -    Procesando fecha 801/2191: 2021-10-08
+2025-08-04 14:26:36,308 - INFO -    Procesando fecha 901/2191: 2022-01-16
+2025-08-04 14:26:42,393 - INFO -    Procesando fecha 1001/2191: 2022-04-26
+2025-08-04 14:26:48,462 - INFO -    Procesando fecha 1101/2191: 2022-08-04
+2025-08-04 14:26:54,534 - INFO -    Procesando fecha 1201/2191: 2022-11-12
+2025-08-04 14:27:00,662 - INFO -    Procesando fecha 1301/2191: 2023-02-20
+2025-08-04 14:27:06,638 - INFO -    Procesando fecha 1401/2191: 2023-05-31
+2025-08-04 14:27:12,709 - INFO -    Procesando fecha 1501/2191: 2023-09-08
+2025-08-04 14:27:18,734 - INFO -    Procesando fecha 1601/2191: 2023-12-17
+2025-08-04 14:27:24,791 - INFO -    Procesando fecha 1701/2191: 2024-03-26
+2025-08-04 14:27:30,837 - INFO -    Procesando fecha 1801/2191: 2024-07-04
+2025-08-04 14:27:36,871 - INFO -    Procesando fecha 1901/2191: 2024-10-12
+2025-08-04 14:27:42,904 - INFO -    Procesando fecha 2001/2191: 2025-01-20
+2025-08-04 14:27:48,854 - INFO -    Procesando fecha 2101/2191: 2025-04-30
+2025-08-04 14:27:53,985 - INFO - ✅ Construcción completada:
+2025-08-04 14:27:53,985 - INFO -    📊 Grafos creados: 1936
+2025-08-04 14:27:53,985 - INFO -    ⚠️ Fechas saltadas: 255
+2025-08-04 14:27:53,985 - INFO - ✅ División temporal de grafos:
+2025-08-04 14:27:53,985 - INFO -    TRAIN: 1355 grafos (2020-04-11 - 2023-12-26)
+2025-08-04 14:27:53,985 - INFO -    VAL: 290 grafos (2023-12-27 - 2024-10-11)
+2025-08-04 14:27:53,985 - INFO -    TEST: 291 grafos (2024-10-12 - 2025-07-29)
+2025-08-04 14:27:53,989 - INFO - 🔍 Validando estructura de grafos...
+2025-08-04 14:27:53,989 - INFO - 🔍 Validando estructura de grafos...
+2025-08-04 14:27:53,991 - INFO - ✅ Validación exitosa:
+2025-08-04 14:27:53,991 - INFO -    📊 Total grafos: 1936
+2025-08-04 14:27:53,991 - INFO -    🔗 Edges promedio: 26.6 (min: 0, max: 306)
+2025-08-04 14:27:53,991 - INFO -    📝 Nodos por grafo: 18
+2025-08-04 14:27:53,991 - INFO -    📊 Features por nodo: 13
+2025-08-04 14:27:53,991 - INFO - 💾 Guardando grafos...
+2025-08-04 14:27:54,212 - INFO - ✅ Guardado train: 1355 grafos en data/graphs/graphs_train.pt
+2025-08-04 14:27:54,234 - INFO - ✅ Guardado val: 290 grafos en data/graphs/graphs_val.pt
+2025-08-04 14:27:54,257 - INFO - ✅ Guardado test: 291 grafos en data/graphs/graphs_test.pt
+2025-08-04 14:27:54,257 - INFO - ✅ Mapeo de nodos creado:
+2025-08-04 14:27:54,257 - INFO -    TRAIN: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+2025-08-04 14:27:54,257 - INFO -    VAL: [12, 13, 14]
+2025-08-04 14:27:54,257 - INFO -    TEST: [15, 16, 17]
+2025-08-04 14:27:54,259 - INFO - ✅ Metadata guardada en data/graphs/graph_metadata.pt

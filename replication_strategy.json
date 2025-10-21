@@ -1,0 +1,38 @@
+{
+  "phase_1_data_preparation": [
+    "1. Cargar datos raw de gnn_technical_features (18 cryptos)",
+    "2. Cargar datos macro de gnn_macro_indicators",
+    "3. Cargar funding_rates de gnn_funding_rates",
+    "4. Unir todas las fuentes por fecha",
+    "5. Crear features calculadas (log_return, macd_hist, etc.)",
+    "6. Forward-fill datos macro para alineaci\u00f3n temporal"
+  ],
+  "phase_2_target_creation": [
+    "1. Crear target usando return_7d directamente (sin shift)",
+    "2. Clasificar: >3% = 1, <-3% = 0, resto = NaN",
+    "3. Filtrar solo samples con targets v\u00e1lidos",
+    "4. Verificar distribuci\u00f3n balanceada"
+  ],
+  "phase_3_model_architecture": [
+    "1. ColumnTransformer con StandardScaler para features num\u00e9ricas",
+    "2. PCA para reducci\u00f3n de dimensionalidad",
+    "3. LGBMClassifier con par\u00e1metros exactos del original",
+    "4. Pipeline completo primario",
+    "5. Meta-modelo LogisticRegression",
+    "6. Optimizaci\u00f3n de threshold"
+  ],
+  "phase_4_training": [
+    "1. Split temporal (70% train, 30% test)",
+    "2. Entrenar pipeline primario en train set",
+    "3. Generar probabilidades para meta-modelo",
+    "4. Entrenar meta-modelo en probabilidades",
+    "5. Optimizar threshold en validation",
+    "6. Evaluar en test set"
+  ],
+  "phase_5_validation": [
+    "1. Comparar accuracy con modelo original (~50.4%)",
+    "2. Verificar que arquitectura es id\u00e9ntica",
+    "3. Validar con out-of-sample tickers",
+    "4. Guardar modelo replicado"
+  ]
+}

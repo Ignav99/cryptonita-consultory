@@ -1,0 +1,444 @@
+total 3712
+-rw-r--r--@  1 User  staff    20K Aug  4 14:27 03_gnn_graph_builder.log
+-rw-r--r--@  1 User  staff    10K Aug  4 15:07 04_gnn_dataset_creator.log
+-rw-r--r--@  1 User  staff   5.7K Aug  8 14:49 annotators.py
+drwxr-xr-x@  3 User  staff    96B Jul 31 16:46 backtest_results
+drwxr-xr-x@  6 User  staff   192B Oct  8 11:44 backups
+-rw-r--r--@  1 User  staff    32K Aug 17 00:30 correlation_heatmap.png
+drwxr-xr-x@  5 User  staff   160B Oct  8 11:44 data
+drwxr-xr-x@  5 User  staff   160B Jul 23 23:59 dataframes
+-rw-r--r--@  1 User  staff    12K Aug  6 00:27 db_explorer.py
+-rw-r--r--@  1 User  staff   104K Aug  5 00:29 debug_plots_20250805_002908.png
+-rw-r--r--@  1 User  staff    51K Aug 17 00:30 diverging_barchart_effort.png
+drwxr-xr-x@  3 User  staff    96B Aug  4 09:49 docs
+-rw-r--r--@  1 User  staff    60K Aug 17 00:28 effort_index_barchart.png
+-rw-r--r--@  1 User  staff     0B Oct  8 11:47 estructura_proyecto.txt
+-rw-r--r--@  1 User  staff   545K Aug 26 19:09 estudio_basico.ipynb
+-rw-r--r--@  1 User  staff   575B Aug  4 11:15 graph_specifications.json
+-rw-r--r--@  1 User  staff   293B Aug  1 11:50 important_features.json
+-rw-r--r--@  1 User  staff    41K Aug 17 00:30 income_distribution_histogram.png
+-rw-r--r--@  1 User  staff   184K Aug  6 16:40 investigacion_gnn.ipynb
+-rw-r--r--@  1 User  staff    29K Aug  8 14:32 mapa_desacuerdos.png
+-rw-r--r--@  1 User  staff   4.7K Aug 20 12:48 model_replication_specs.json
+drwxr-xr-x@  5 User  staff   160B Aug  6 11:39 models
+-rwxr-xr-x@  1 User  staff   929B Aug 20 14:25 network_switcher.sh
+drwxr-xr-x@  6 User  staff   192B Oct  8 11:44 new_model
+drwxr-xr-x@ 21 User  staff   672B Jul 24 15:22 notebooks
+-rw-r--r--@  1 User  staff   799B Aug  4 09:52 pipeline_status.json
+-rw-r--r--@  1 User  staff    67K Aug 17 00:28 population_bubble_chart.png
+-rw-r--r--@  1 User  staff   5.5K Aug 20 13:48 post_reboot_monitor.py
+-rw-r--r--@  1 User  staff    11K Aug 20 14:24 repeater_optimizer.py
+-rw-r--r--@  1 User  staff    19K Aug  6 11:39 replica_model.py
+-rw-r--r--@  1 User  staff   1.5K Aug 20 12:48 replication_strategy.json
+drwxr-xr-x@  3 User  staff    96B Aug  4 09:53 reports
+-rw-r--r--@  1 User  staff   741B Jul 13 14:09 requirements.txt
+-rw-r--r--@  1 User  staff    59K Aug 17 00:22 scatterplot_salary_vs_housing.png
+-rwxr-xr-x@  1 User  staff    23K Jul 31 12:41 setup_dashboard.sh
+drwxr-xr-x@ 15 User  staff   480B Oct  8 11:44 src
+-rw-r--r--@  1 User  staff   8.4K Aug 20 14:11 test.py
+-rw-r--r--@  1 User  staff    16K Aug  8 14:32 total_anotaciones.png
+-rw-r--r--@  1 User  staff   479K Aug  5 00:20 training_plots_20250805_002010.png
+-rw-r--r--@  1 User  staff   406B Aug  5 00:20 training_results_20250805_002010.json
+-rw-r--r--@  1 User  staff     0B Aug  5 00:15 training.log
+drwxr-xr-x@  5 User  staff   160B Aug  8 14:44 z_anotations
+
+./backtest_results:
+total 688
+-rw-r--r--@ 1 User  staff   342K Jul 31 16:46 cryptonita_ultra_professional_backtest_20250731_164608.json
+
+./backups:
+total 0
+drwxr-xr-x@ 2 User  staff    64B Jul 31 12:22 20250731_122202
+drwxr-xr-x@ 2 User  staff    64B Jul 31 12:22 20250731_122215
+drwxr-xr-x@ 5 User  staff   160B Jul 31 12:28 20250731_122633
+
+./backups/20250731_122202:
+total 0
+
+./backups/20250731_122215:
+total 0
+
+./backups/20250731_122633:
+total 120
+-rw-r--r--@ 1 User  staff    21K Jul 31 12:28 analytics_backup.py
+-rw-r--r--@ 1 User  staff    18K Jul 31 12:28 database_backup.py
+-rw-r--r--@ 1 User  staff    15K Jul 31 12:28 main_backup.py
+
+./data:
+total 0
+drwxr-xr-x@ 4 User  staff   128B Aug  4 15:07 datasets
+drwxr-xr-x@ 6 User  staff   192B Aug  4 13:59 graphs
+
+./data/datasets:
+total 16
+-rw-r--r--@ 1 User  staff   2.1K Aug  4 15:07 dataset_config.pt
+-rw-r--r--@ 1 User  staff   2.0K Aug  4 15:07 node_scalers.pt
+
+./data/graphs:
+total 13776
+-rw-r--r--@ 1 User  staff   1.9K Aug  4 14:27 graph_metadata.pt
+-rw-r--r--@ 1 User  staff   1.0M Aug  4 14:27 graphs_test.pt
+-rw-r--r--@ 1 User  staff   4.7M Aug  4 14:27 graphs_train.pt
+-rw-r--r--@ 1 User  staff   1.0M Aug  4 14:27 graphs_val.pt
+
+./dataframes:
+total 4896
+-rw-r--r--@ 1 User  staff   1.2M Jul 22 20:49 data_with_target.parquet
+-rw-r--r--@ 1 User  staff   974K Jul 20 22:07 master_df_final_audited.parquet
+-rw-r--r--@ 1 User  staff   221K Jul 23 23:45 master_df_new_universe_complete.parquet
+
+./docs:
+total 8
+-rw-r--r--@ 1 User  staff   3.0K Aug  4 09:49 gnn_schema.md
+
+./models:
+total 1392
+drwxr-xr-x@ 5 User  staff   160B Aug  5 00:21 checkpoints
+-rw-r--r--@ 1 User  staff   345K Jul 23 20:05 ULTRA_MODEL_PACKAGE.joblib
+-rw-r--r--@ 1 User  staff   346K Aug  6 11:39 ULTRA_MODEL_REPLICA_EXPANDED.joblib
+
+./models/checkpoints:
+total 95712
+-rw-r--r--@ 1 User  staff    16M Aug  5 00:15 checkpoint_epoch_002_score_-31.0862_20250805_001526.pt
+-rw-r--r--@ 1 User  staff    16M Aug  5 00:15 checkpoint_epoch_003_score_-31.0768_20250805_001528.pt
+-rw-r--r--@ 1 User  staff    16M Aug  5 00:16 checkpoint_epoch_025_score_-31.0862_20250805_001610.pt
+
+./new_model:
+total 24
+drwxr-xr-x@  4 User  staff   128B Aug  4 00:19 __pycache__
+-rw-r--r--@  1 User  staff    11K Aug  1 23:06 CRYPTONITA_GNN_MASTER_PLAN.md
+drwxr-xr-x@ 13 User  staff   416B Aug  5 00:31 data
+
+./new_model/__pycache__:
+total 136
+-rw-r--r--@ 1 User  staff    41K Aug  4 00:18 experiment_01_predictor_puro.cpython-311.pyc
+-rw-r--r--@ 1 User  staff    23K Aug  3 22:40 gnn_architecture.cpython-311.pyc
+
+./new_model/data:
+total 632
+drwxr-xr-x@ 4 User  staff   128B Aug  5 00:21 __pycache__
+-rw-r--r--@ 1 User  staff    23K Aug  4 09:48 00_gnn_database_schema_setup.py
+-rw-r--r--@ 1 User  staff    36K Aug  4 09:41 01_gnn_ingestion_pipeline.py
+-rw-r--r--@ 1 User  staff    28K Aug  4 10:14 02_gnn_feature_engineering_pipeline.py
+-rw-r--r--@ 1 User  staff    13K Aug  4 10:31 02_gnn_phase1_fixed.py
+-rw-r--r--@ 1 User  staff    18K Aug  4 11:14 03_gnn_graph_analyzer.py
+-rw-r--r--@ 1 User  staff    31K Aug  4 14:25 03_gnn_graph_builder.py
+-rw-r--r--@ 1 User  staff    21K Aug  4 15:06 04_gnn_dataset_creator.py
+-rw-r--r--@ 1 User  staff    45K Aug  4 15:26 05_gnn_architecture.py
+-rw-r--r--@ 1 User  staff    54K Aug  5 00:15 06_gnn_trainer.py
+-rw-r--r--@ 1 User  staff    25K Aug  5 00:39 08_hybrid_practical_model.py
+
+./new_model/data/__pycache__:
+total 160
+-rw-r--r--@ 1 User  staff    27K Aug  5 00:15 04_gnn_dataset_creator.cpython-311.pyc
+-rw-r--r--@ 1 User  staff    50K Aug  5 00:15 05_gnn_architecture.cpython-311.pyc
+
+./notebooks:
+total 74272
+-rw-r--r--@  1 User  staff    12K Jul 24 15:01 01_ETL_Master_DataFrame.ipynb
+-rw-r--r--@  1 User  staff    12K Jul 24 15:01 01_master_dataframe_2.ipynb
+-rw-r--r--@  1 User  staff   1.5M Aug  1 22:20 02_Modeling_and_Strategy.ipynb
+-rw-r--r--@  1 User  staff    64K Jul 30 14:20 03_Strategy_Analysis_and_Roadmap.ipynb
+-rw-r--r--@  1 User  staff    50K Jul 24 15:02 04_OOS_Asset_Test.ipynb
+drwxr-xr-x@  9 User  staff   288B Jul 23 23:43 binance-futures-dataset-builder
+drwxr-xr-x@  3 User  staff    96B Jul 20 23:09 config
+drwxr-xr-x@  6 User  staff   192B Jul 15 11:06 data
+drwxr-xr-x@ 16 User  staff   512B Aug  1 22:21 dataframes
+-rw-r--r--@  1 User  staff   293B Jul 22 20:33 important_features.json
+-rw-r--r--@  1 User  staff   4.5M Aug  1 11:19 informe_backtest_final.html
+-rw-r--r--@  1 User  staff   4.5M Jul 21 23:32 informe_backtest_v1.html
+-rw-r--r--@  1 User  staff   343B Jul 14 23:55 label_encoder_binary.pkl
+-rw-r--r--@  1 User  staff    21M Jul 14 23:55 lstm_aggressive_trading_model.h5
+-rw-r--r--@  1 User  staff   4.7M Jul 15 00:26 lstm_multi_currency_improved.h5
+drwxr-xr-x@  4 User  staff   128B Aug  1 11:19 models
+drwxr-xr-x@ 16 User  staff   512B Jul 15 11:06 plots
+-rw-r--r--@  1 User  staff   6.5K Jul 14 23:55 scaler_aggressive.pkl
+
+./notebooks/binance-futures-dataset-builder:
+total 56
+-rw-r--r--@ 1 User  staff   1.7K Jul 18 14:20 package-lock.json
+-rw-r--r--@ 1 User  staff   1.2K Jul 18 14:20 package.json
+-rw-r--r--@ 1 User  staff   4.9K Jul 18 14:20 README.md
+drwxr-xr-x@ 6 User  staff   192B Jul 18 14:20 src
+-rw-r--r--@ 1 User  staff    12K Jul 18 14:20 tsconfig.json
+
+./notebooks/binance-futures-dataset-builder/src:
+total 8
+drwxr-xr-x@ 6 User  staff   192B Jul 18 14:21 binance
+drwxr-xr-x@ 9 User  staff   288B Jul 18 14:21 dataset-builder
+drwxr-xr-x@ 5 User  staff   160B Jul 18 14:21 external-request
+-rw-r--r--@ 1 User  staff   354B Jul 18 14:20 index.ts
+
+./notebooks/binance-futures-dataset-builder/src/binance:
+total 40
+-rw-r--r--@ 1 User  staff   5.9K Jul 18 14:20 binance.service.ts
+-rw-r--r--@ 1 User  staff    65B Jul 18 14:20 index.ts
+-rw-r--r--@ 1 User  staff   2.7K Jul 18 14:20 interfaces.ts
+-rw-r--r--@ 1 User  staff   877B Jul 18 14:20 request-throttle.ts
+
+./notebooks/binance-futures-dataset-builder/src/dataset-builder:
+total 64
+-rw-r--r--@ 1 User  staff   6.7K Jul 18 14:20 dataset-builder.ts
+-rw-r--r--@ 1 User  staff   1.5K Jul 18 14:20 funding-rate.service.ts
+-rw-r--r--@ 1 User  staff   591B Jul 18 14:20 index.ts
+-rw-r--r--@ 1 User  staff   2.1K Jul 18 14:20 interfaces.ts
+-rw-r--r--@ 1 User  staff   1.2K Jul 18 14:20 long-short-ratio.service.ts
+-rw-r--r--@ 1 User  staff   1.1K Jul 18 14:20 open-interest.service.ts
+-rw-r--r--@ 1 User  staff   1.2K Jul 18 14:20 taker-buy-sell-volume.service.ts
+
+./notebooks/binance-futures-dataset-builder/src/external-request:
+total 24
+-rw-r--r--@ 1 User  staff   3.4K Jul 18 14:20 external-request.service.ts
+-rw-r--r--@ 1 User  staff    73B Jul 18 14:20 index.ts
+-rw-r--r--@ 1 User  staff   553B Jul 18 14:20 interfaces.ts
+
+./notebooks/config:
+total 8
+-rw-r--r--@ 1 User  staff   270B Jul 20 23:09 available_features.txt
+
+./notebooks/data:
+total 0
+drwxr-xr-x@ 2 User  staff    64B Jul 13 14:04 features
+drwxr-xr-x@ 2 User  staff    64B Jul 13 14:04 processed
+drwxr-xr-x@ 3 User  staff    96B Jul 15 11:06 raw
+
+./notebooks/data/features:
+total 0
+
+./notebooks/data/processed:
+total 0
+
+./notebooks/data/raw:
+total 91752
+-rw-rw-r--@ 1 User  staff    45M Jul 14 12:39 crypto_news_api.csv
+
+./notebooks/dataframes:
+total 29504
+-rw-r--r--@ 1 User  staff   1.2M Aug  1 11:18 data_with_target copy.parquet
+-rw-r--r--@ 1 User  staff   1.2M Aug  1 11:18 data_with_target.parquet
+-rw-r--r--@ 1 User  staff   105K Jul 20 23:27 derivatives_funding_rates.parquet
+-rw-r--r--@ 1 User  staff   1.2M Aug  1 22:21 gnn_feature_store_v1.parquet
+-rw-r--r--@ 1 User  staff   1.2M Aug  1 22:21 gnn_holistic_features.parquet
+-rw-r--r--@ 1 User  staff   1.2M Aug  1 22:21 gnn_macro_ready_features.parquet
+-rw-r--r--@ 1 User  staff   434K Aug  1 22:21 gnn_minimal_features.parquet
+-rw-r--r--@ 1 User  staff   974K Aug  1 11:18 master_df_final_audited.parquet
+-rw-r--r--@ 1 User  staff   973K Jul 21 00:05 master_df_final.parquet
+-rw-r--r--@ 1 User  staff   221K Aug  1 11:18 master_df_new_universe_complete.parquet
+-rw-r--r--@ 1 User  staff    13K Jul 23 23:30 master_df_new_universe.parquet
+-rw-r--r--@ 1 User  staff   401K Jul 15 11:01 master_df_preprocesado.parquet
+-rw-r--r--@ 1 User  staff   797K Jul 16 00:04 master_df_v2_audited.parquet
+-rw-r--r--@ 1 User  staff   4.5M Jul 30 20:55 model_input_features.parquet
+
+./notebooks/models:
+total 1392
+-rw-r--r--@ 1 User  staff   345K Jul 21 23:32 final_strategy_package.joblib
+-rw-r--r--@ 1 User  staff   345K Aug  1 11:19 ULTRA_MODEL_PACKAGE.joblib
+
+./notebooks/plots:
+total 7624
+-rw-r--r--@ 1 User  staff   633K Jul 14 10:26 01_btc_vs_vix.png
+-rw-r--r--@ 1 User  staff   205K Jul 14 10:26 02_correlation_heatmap_full.png
+-rw-r--r--@ 1 User  staff   269K Jul 14 00:27 03_daily_sentiment.png
+-rw-r--r--@ 1 User  staff   546K Jul 14 10:27 04_rolling_correlation.png
+-rw-r--r--@ 1 User  staff   179K Jul 14 10:27 05_feature_importance.png
+-rw-r--r--@ 1 User  staff   662K Jul 14 10:27 06_btc_decomposition.png
+-rw-r--r--@ 1 User  staff   528K Jul 14 10:27 07_feature_importance_multi_horizon.png
+-rw-r--r--@ 1 User  staff   154K Jul 14 10:27 08_final_feature_importance.png
+-rw-r--r--@ 1 User  staff    93K Jul 14 10:27 09_confusion_matrix.png
+-rw-r--r--@ 1 User  staff   132K Jul 15 09:45 09_pca_variance_explained.png
+-rw-r--r--@ 1 User  staff   101K Jul 14 10:28 10_confusion_matrix_smote.png
+-rw-r--r--@ 1 User  staff    83K Jul 15 10:13 10_xgboost_confusion_matrix.png
+-rw-r--r--@ 1 User  staff    97K Jul 14 10:32 11_confusion_matrix_tuned.png
+-rw-r--r--@ 1 User  staff    99K Jul 14 10:37 12_confusion_matrix_final.png
+
+./reports:
+total 8
+-rw-r--r--@ 1 User  staff   3.6K Aug  4 09:52 validation_report_20250804_095258.md
+
+./src:
+total 8
+drwxr-xr-x@  3 User  staff    96B Jul 30 14:28 __pycache__
+drwxr-xr-x@  3 User  staff    96B Jul 31 16:19 backtesting
+-rw-r--r--@  1 User  staff   1.3K Jul 30 14:21 celery_app.py
+drwxr-xr-x@  5 User  staff   160B Jul 25 01:15 config
+drwxr-xr-x@ 11 User  staff   352B Jul 24 15:04 data_ingestion
+drwxr-xr-x@  6 User  staff   192B Jul 15 11:06 feature_engineering
+drwxr-xr-x@  3 User  staff    96B Jul 15 11:06 modeling
+drwxr-xr-x@  7 User  staff   224B Jul 30 14:28 pipeline
+drwxr-xr-x@ 11 User  staff   352B Jul 31 15:46 production
+drwxr-xr-x@  6 User  staff   192B Jul 31 15:41 trading
+drwxr-xr-x@  8 User  staff   256B Jul 28 19:16 utils
+drwxr-xr-x@  8 User  staff   256B Jul 30 20:42 web
+
+./src/__pycache__:
+total 8
+-rw-r--r--@ 1 User  staff   1.8K Jul 30 14:28 celery_app.cpython-311.pyc
+
+./src/backtesting:
+total 32
+-rw-r--r--@ 1 User  staff    14K Jul 31 16:07 enhanced_features.py
+
+./src/config:
+total 16
+-rw-r--r--@ 1 User  staff     0B Jul 13 14:04 __init__.py
+drwxr-xr-x@ 4 User  staff   128B Jul 31 13:14 __pycache__
+-rw-r--r--@ 1 User  staff   4.2K Jul 31 13:14 settings.py
+
+./src/config/__pycache__:
+total 16
+-rw-r--r--@ 1 User  staff   252B Jul 13 14:13 __init__.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   3.2K Jul 31 13:14 settings.cpython-311.pyc
+
+./src/data_ingestion:
+total 72
+-rw-r--r--@ 1 User  staff     0B Jul 13 14:04 __init__.py
+drwxr-xr-x@ 7 User  staff   224B Jul 15 11:06 __pycache__
+-rw-r--r--@ 1 User  staff   3.1K Jul 14 13:07 ingest_btc_data.py
+-rw-r--r--@ 1 User  staff   4.1K Jul 24 15:01 ingest_data.py
+-rw-r--r--@ 1 User  staff   6.8K Jul 24 15:04 ingest_historical_data.py
+-rw-r--r--@ 1 User  staff   2.9K Jul 13 22:39 ingest_macro.py
+-rw-r--r--@ 1 User  staff   930B Jul 13 21:21 ingest_onchain.py
+-rw-r--r--@ 1 User  staff   3.2K Jul 14 16:13 ingest_sentiment_full.py
+-rw-r--r--@ 1 User  staff   3.0K Jul 14 01:15 ingest_sentiment.py
+
+./src/data_ingestion/__pycache__:
+total 56
+-rw-r--r--@ 1 User  staff   260B Jul 13 14:38 __init__.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   4.6K Jul 13 21:40 ingest_market_data.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   1.9K Jul 13 21:23 ingest_onchain.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   5.7K Jul 13 15:30 ingest_yfinance.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   2.9K Jul 13 16:37 populate_assets.cpython-311.pyc
+
+./src/feature_engineering:
+total 16
+-rw-r--r--@ 1 User  staff     0B Jul 13 14:04 __init__.py
+drwxr-xr-x@ 5 User  staff   160B Jul 15 11:06 __pycache__
+-rw-r--r--@ 1 User  staff   3.1K Jul 13 22:20 candle_patterns.py
+-rw-r--r--@ 1 User  staff   3.2K Jul 13 21:22 technical_indicators.py
+
+./src/feature_engineering/__pycache__:
+total 40
+-rw-r--r--@ 1 User  staff   265B Jul 13 14:38 __init__.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   5.7K Jul 13 21:23 candle_patterns.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   5.3K Jul 13 21:23 technical_indicators.cpython-311.pyc
+
+./src/modeling:
+total 0
+-rw-r--r--@ 1 User  staff     0B Jul 13 14:04 __init__.py
+
+./src/pipeline:
+total 48
+-rw-r--r--@ 1 User  staff     0B Jul 30 14:18 __init__.py
+drwxr-xr-x@ 6 User  staff   192B Jul 30 19:55 __pycache__
+-rw-r--r--@ 1 User  staff   5.8K Jul 30 19:34 monitoring.py
+-rw-r--r--@ 1 User  staff   4.1K Jul 30 19:35 scheduler.py
+-rw-r--r--@ 1 User  staff   7.5K Jul 30 19:36 tasks.py
+
+./src/pipeline/__pycache__:
+total 64
+-rw-r--r--@ 1 User  staff   254B Jul 30 14:28 __init__.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   9.2K Jul 30 19:55 monitoring.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   3.8K Jul 30 19:46 scheduler.cpython-311.pyc
+-rw-r--r--@ 1 User  staff    11K Jul 30 19:45 tasks.cpython-311.pyc
+
+./src/production:
+total 184
+-rw-r--r--@ 1 User  staff     0B Jul 23 23:56 __init__.py
+drwxr-xr-x@ 8 User  staff   256B Jul 30 19:21 __pycache__
+-rw-r--r--@ 1 User  staff   8.7K Jul 24 15:54 01_ingest_daily_data.py
+-rw-r--r--@ 1 User  staff   5.8K Jul 24 18:22 02_prepare_features.py
+-rw-r--r--@ 1 User  staff    18K Jul 31 15:46 03_generate_signals_backup.py
+-rw-r--r--@ 1 User  staff    18K Jul 31 15:46 03_generate_signals.py
+-rw-r--r--@ 1 User  staff   4.1K Jul 29 17:27 04_execution_engine.py
+-rw-r--r--@ 1 User  staff   4.4K Jul 24 18:29 05_strategy_simulation.py
+-rw-r--r--@ 1 User  staff    14K Jul 29 17:30 exchange_connector.py
+
+./src/production/__pycache__:
+total 136
+-rw-r--r--@ 1 User  staff   256B Jul 29 17:27 __init__.cpython-311.pyc
+-rw-r--r--@ 1 User  staff    13K Jul 30 18:59 01_ingest_daily_data.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   9.2K Jul 30 19:21 02_prepare_features.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   5.5K Jul 30 19:21 03_generate_signals.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   5.0K Jul 30 19:21 04_execution_engine.cpython-311.pyc
+-rw-r--r--@ 1 User  staff    19K Jul 29 17:33 exchange_connector.cpython-311.pyc
+
+./src/trading:
+total 88
+drwxr-xr-x@ 3 User  staff    96B Jul 31 15:30 __pycache__
+-rw-r--r--@ 1 User  staff   7.5K Jul 31 15:27 advanced_money_management_backup.py
+-rw-r--r--@ 1 User  staff    12K Jul 31 15:30 advanced_money_management.py
+-rw-r--r--@ 1 User  staff    16K Jul 31 15:41 long_only_system.py
+
+./src/trading/__pycache__:
+total 32
+-rw-r--r--@ 1 User  staff    12K Jul 31 15:30 advanced_money_management.cpython-311.pyc
+
+./src/utils:
+total 32
+-rw-r--r--@ 1 User  staff     0B Jul 13 14:04 __init__.py
+drwxr-xr-x@ 5 User  staff   160B Jul 15 11:06 __pycache__
+-rw-r--r--@ 1 User  staff   1.5K Jul 28 19:16 create_trade_log_table.py
+-rw-r--r--@ 1 User  staff   2.3K Jul 24 15:14 db_cleanup.py
+-rw-r--r--@ 1 User  staff   1.4K Jul 13 14:12 db_connector.py
+-rw-r--r--@ 1 User  staff   1.8K Jul 13 21:21 init_db.py
+
+./src/utils/__pycache__:
+total 24
+-rw-r--r--@ 1 User  staff   251B Jul 13 14:13 __init__.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   2.0K Jul 13 14:13 db_connector.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   2.9K Jul 13 21:23 init_db.cpython-311.pyc
+
+./src/web:
+total 0
+-rw-r--r--@ 1 User  staff     0B Jul 30 20:41 __init__.py
+drwxr-xr-x@ 3 User  staff    96B Jul 30 20:41 __pycache__
+drwxr-xr-x@ 9 User  staff   288B Jul 31 13:29 api
+drwxr-xr-x@ 2 User  staff    64B Jul 30 20:41 frontend
+drwxr-xr-x@ 4 User  staff   128B Jul 30 20:41 static
+drwxr-xr-x@ 3 User  staff    96B Jul 31 13:01 templates
+
+./src/web/__pycache__:
+total 8
+-rw-r--r--@ 1 User  staff   249B Jul 30 20:41 __init__.cpython-311.pyc
+
+./src/web/api:
+total 168
+-rw-r--r--@ 1 User  staff     0B Jul 30 20:41 __init__.py
+drwxr-xr-x@ 7 User  staff   224B Jul 31 15:30 __pycache__
+-rw-r--r--@ 1 User  staff    21K Jul 31 12:08 analytics.py
+-rw-r--r--@ 1 User  staff   1.7K Jul 31 13:39 binance_service.py
+-rw-r--r--@ 1 User  staff    18K Jul 31 12:36 database.py
+-rw-r--r--@ 1 User  staff    15K Jul 31 12:57 main_temp_backup.py
+-rw-r--r--@ 1 User  staff    18K Jul 31 15:17 main.py
+
+./src/web/api/__pycache__:
+total 176
+-rw-r--r--@ 1 User  staff   253B Jul 30 20:41 __init__.cpython-311.pyc
+-rw-r--r--@ 1 User  staff    25K Jul 31 12:36 analytics.cpython-311.pyc
+-rw-r--r--@ 1 User  staff   2.4K Jul 31 15:17 binance_service.cpython-311.pyc
+-rw-r--r--@ 1 User  staff    21K Jul 31 12:36 database.cpython-311.pyc
+-rw-r--r--@ 1 User  staff    24K Jul 31 15:29 main.cpython-311.pyc
+
+./src/web/frontend:
+total 0
+
+./src/web/static:
+total 0
+drwxr-xr-x@ 2 User  staff    64B Jul 30 20:41 css
+drwxr-xr-x@ 2 User  staff    64B Jul 30 20:41 js
+
+./src/web/static/css:
+total 0
+
+./src/web/static/js:
+total 0
+
+./src/web/templates:
+total 64
+-rw-r--r--@ 1 User  staff    30K Jul 31 12:55 enhanced_dashboard.html
+
+./z_anotations:
+total 3872
+-rw-r--r--@ 1 User  staff   693K Aug  8 14:40 Advanced_Dashboard.png
+-rw-r--r--@ 1 User  staff   588K Aug  8 14:36 Annotation_Dashboard.png
+-rw-r--r--@ 1 User  staff   648K Aug  8 14:44 Final_Dashboard.png

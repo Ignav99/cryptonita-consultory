@@ -1,0 +1,38 @@
+{
+  "nodes": {
+    "count": 18,
+    "type": "crypto_assets",
+    "features_dim": 13,
+    "embedding_dim": 16
+  },
+  "edges": {
+    "strategy": "dynamic_correlation",
+    "threshold": 0.3,
+    "features_dim": 3
+  },
+  "temporal": {
+    "window_size": 30,
+    "prediction_horizons": [
+      1,
+      3,
+      7
+    ],
+    "total_sequences": 2161
+  },
+  "targets": {
+    "type": "multiclass",
+    "classes": [
+      "STRONG_SELL",
+      "SELL",
+      "HOLD",
+      "BUY",
+      "STRONG_BUY"
+    ],
+    "thresholds": [
+      -0.05,
+      -0.02,
+      0.02,
+      0.05
+    ]
+  }
+}

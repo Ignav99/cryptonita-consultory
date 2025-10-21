@@ -1,0 +1,25 @@
+# Entorno Virtual
+.venv/
+venv/
+ENV/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de configuración y credenciales
+.env
+*.ini
+*.cfg
+
+# Datos
+data/
+
+# Notebooks
+.ipynb_checkpoints
+
+# Archivos de IDE
+.idea/
+.vscode/

@@ -1,0 +1,45 @@
+{
+  "ingestion_completed": true,
+  "completion_time": "2025-08-04T09:52:58.976555",
+  "success_rate": 100.0,
+  "data_period": {
+    "start": "2019-07-30",
+    "end": "2025-07-30"
+  },
+  "assets": {
+    "crypto_tickers": [
+      "BTC-USD",
+      "ETH-USD",
+      "BNB-USD",
+      "ADA-USD",
+      "SOL-USD",
+      "AVAX-USD",
+      "DOT-USD",
+      "LINK-USD",
+      "UNI-USD",
+      "AAVE-USD",
+      "MATIC-USD",
+      "LTC-USD",
+      "XRP-USD",
+      "DOGE-USD",
+      "ATOM-USD",
+      "ALGO-USD",
+      "FTM-USD",
+      "NEAR-USD"
+    ],
+    "macro_indicators": [
+      "SPY",
+      "VIX",
+      "TNX",
+      "DXY",
+      "GOLD",
+      "OIL"
+    ]
+  },
+  "next_steps": [
+    "calculate_technical_features",
+    "calculate_correlations",
+    "generate_market_regime",
+    "build_gnn_graph"
+  ]
+}

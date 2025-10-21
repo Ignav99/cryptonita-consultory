@@ -1,0 +1,166 @@
+2025-08-04 15:07:11,865 - INFO - 🚀 Iniciando GNNDatasetCreator...
+2025-08-04 15:07:11,865 - INFO - 🔧 GNNDatasetCreator inicializado
+2025-08-04 15:07:11,865 - INFO -    📁 Directorio grafos: data/graphs
+2025-08-04 15:07:11,865 - INFO -    ⚙️ Configuración: {'sequence_length': 30, 'batch_size': 16, 'num_workers': 0, 'prediction_horizons': ['1d', '3d', '7d'], 'normalize_features': True, 'robust_scaling': True}
+2025-08-04 15:07:11,865 - INFO - 📂 Cargando grafos...
+2025-08-04 15:07:11,865 - INFO - 📂 Cargando grafos desde archivos...
+2025-08-04 15:07:12,022 - INFO -    ✅ TRAIN: 1355 grafos cargados
+2025-08-04 15:07:12,022 - INFO -       📊 Estructura grafo: 18 nodos, 13 features
+2025-08-04 15:07:12,022 - INFO -       🔗 Edges: 0
+2025-08-04 15:07:12,022 - INFO -       🎯 Targets disponibles: ['1d', '3d', '7d']
+2025-08-04 15:07:12,042 - INFO -    ✅ VAL: 290 grafos cargados
+2025-08-04 15:07:12,042 - INFO -       📊 Estructura grafo: 18 nodos, 13 features
+2025-08-04 15:07:12,042 - INFO -       🔗 Edges: 0
+2025-08-04 15:07:12,042 - INFO -       🎯 Targets disponibles: ['1d', '3d', '7d']
+2025-08-04 15:07:12,062 - INFO -    ✅ TEST: 291 grafos cargados
+2025-08-04 15:07:12,062 - INFO -       📊 Estructura grafo: 18 nodos, 13 features
+2025-08-04 15:07:12,062 - INFO -       🔗 Edges: 0
+2025-08-04 15:07:12,062 - INFO -       🎯 Targets disponibles: ['1d', '3d', '7d']
+2025-08-04 15:07:12,063 - INFO -    ✅ Metadata cargada: 2025-08-04T14:27:54.257638
+2025-08-04 15:07:12,063 - INFO - 🔄 Creando datasets...
+2025-08-04 15:07:12,063 - INFO - 🔄 Creando datasets de secuencias temporales...
+2025-08-04 15:07:12,063 - INFO - 🔧 Creando scalers para normalización...
+2025-08-04 15:07:12,071 - INFO -    ✅ RobustScaler creado y ajustado:
+2025-08-04 15:07:12,072 - INFO -       📊 Muestras entrenamiento: 24,390
+2025-08-04 15:07:12,072 - INFO -       📊 Features: 13
+2025-08-04 15:07:12,072 - INFO -       📏 Escala features: [0.04580375 0.0812555  0.13089525 0.337285   0.03630525]
+2025-08-04 15:07:12,072 - INFO -    📊 Creando datasets para TRAIN:
+2025-08-04 15:07:12,073 - INFO -    📊 GraphSequenceDataset creado:
+2025-08-04 15:07:12,073 - INFO -       Grafos totales: 1355
+2025-08-04 15:07:12,073 - INFO -       Secuencias válidas: 1325
+2025-08-04 15:07:12,073 - INFO -       Longitud secuencia: 30
+2025-08-04 15:07:12,073 - INFO -       Horizonte predicción: 1d
+2025-08-04 15:07:12,073 - INFO -       ✅ 1d: 1325 secuencias
+2025-08-04 15:07:12,074 - INFO -    📊 GraphSequenceDataset creado:
+2025-08-04 15:07:12,074 - INFO -       Grafos totales: 1355
+2025-08-04 15:07:12,074 - INFO -       Secuencias válidas: 1325
+2025-08-04 15:07:12,074 - INFO -       Longitud secuencia: 30
+2025-08-04 15:07:12,074 - INFO -       Horizonte predicción: 3d
+2025-08-04 15:07:12,074 - INFO -       ✅ 3d: 1325 secuencias
+2025-08-04 15:07:12,074 - INFO -    📊 GraphSequenceDataset creado:
+2025-08-04 15:07:12,074 - INFO -       Grafos totales: 1355
+2025-08-04 15:07:12,075 - INFO -       Secuencias válidas: 1325
+2025-08-04 15:07:12,075 - INFO -       Longitud secuencia: 30
+2025-08-04 15:07:12,075 - INFO -       Horizonte predicción: 7d
+2025-08-04 15:07:12,075 - INFO -       ✅ 7d: 1325 secuencias
+2025-08-04 15:07:12,075 - INFO -    📊 Creando datasets para VAL:
+2025-08-04 15:07:12,075 - INFO -    📊 GraphSequenceDataset creado:
+2025-08-04 15:07:12,075 - INFO -       Grafos totales: 290
+2025-08-04 15:07:12,075 - INFO -       Secuencias válidas: 260
+2025-08-04 15:07:12,075 - INFO -       Longitud secuencia: 30
+2025-08-04 15:07:12,075 - INFO -       Horizonte predicción: 1d
+2025-08-04 15:07:12,075 - INFO -       ✅ 1d: 260 secuencias
+2025-08-04 15:07:12,075 - INFO -    📊 GraphSequenceDataset creado:
+2025-08-04 15:07:12,075 - INFO -       Grafos totales: 290
+2025-08-04 15:07:12,075 - INFO -       Secuencias válidas: 260
+2025-08-04 15:07:12,075 - INFO -       Longitud secuencia: 30
+2025-08-04 15:07:12,075 - INFO -       Horizonte predicción: 3d
+2025-08-04 15:07:12,075 - INFO -       ✅ 3d: 260 secuencias
+2025-08-04 15:07:12,075 - INFO -    📊 GraphSequenceDataset creado:
+2025-08-04 15:07:12,075 - INFO -       Grafos totales: 290
+2025-08-04 15:07:12,075 - INFO -       Secuencias válidas: 260
+2025-08-04 15:07:12,075 - INFO -       Longitud secuencia: 30
+2025-08-04 15:07:12,075 - INFO -       Horizonte predicción: 7d
+2025-08-04 15:07:12,075 - INFO -       ✅ 7d: 260 secuencias
+2025-08-04 15:07:12,075 - INFO -    📊 Creando datasets para TEST:
+2025-08-04 15:07:12,075 - INFO -    📊 GraphSequenceDataset creado:
+2025-08-04 15:07:12,076 - INFO -       Grafos totales: 291
+2025-08-04 15:07:12,076 - INFO -       Secuencias válidas: 261
+2025-08-04 15:07:12,076 - INFO -       Longitud secuencia: 30
+2025-08-04 15:07:12,076 - INFO -       Horizonte predicción: 1d
+2025-08-04 15:07:12,076 - INFO -       ✅ 1d: 261 secuencias
+2025-08-04 15:07:12,076 - INFO -    📊 GraphSequenceDataset creado:
+2025-08-04 15:07:12,076 - INFO -       Grafos totales: 291
+2025-08-04 15:07:12,076 - INFO -       Secuencias válidas: 261
+2025-08-04 15:07:12,076 - INFO -       Longitud secuencia: 30
+2025-08-04 15:07:12,076 - INFO -       Horizonte predicción: 3d
+2025-08-04 15:07:12,076 - INFO -       ✅ 3d: 261 secuencias
+2025-08-04 15:07:12,076 - INFO -    📊 GraphSequenceDataset creado:
+2025-08-04 15:07:12,076 - INFO -       Grafos totales: 291
+2025-08-04 15:07:12,076 - INFO -       Secuencias válidas: 261
+2025-08-04 15:07:12,076 - INFO -       Longitud secuencia: 30
+2025-08-04 15:07:12,076 - INFO -       Horizonte predicción: 7d
+2025-08-04 15:07:12,076 - INFO -       ✅ 7d: 261 secuencias
+2025-08-04 15:07:12,076 - INFO - 🔄 Creando dataloaders...
+2025-08-04 15:07:12,076 - INFO - 🔄 Creando DataLoaders...
+2025-08-04 15:07:12,076 - INFO -    📊 Creando dataloaders para TRAIN:
+2025-08-04 15:07:12,076 - INFO -       ✅ 1d: 82 batches
+2025-08-04 15:07:12,076 - INFO -       ✅ 3d: 82 batches
+2025-08-04 15:07:12,076 - INFO -       ✅ 7d: 82 batches
+2025-08-04 15:07:12,076 - INFO -    📊 Creando dataloaders para VAL:
+2025-08-04 15:07:12,076 - INFO -       ✅ 1d: 17 batches
+2025-08-04 15:07:12,076 - INFO -       ✅ 3d: 17 batches
+2025-08-04 15:07:12,076 - INFO -       ✅ 7d: 17 batches
+2025-08-04 15:07:12,076 - INFO -    📊 Creando dataloaders para TEST:
+2025-08-04 15:07:12,076 - INFO -       ✅ 1d: 17 batches
+2025-08-04 15:07:12,076 - INFO -       ✅ 3d: 17 batches
+2025-08-04 15:07:12,076 - INFO -       ✅ 7d: 17 batches
+2025-08-04 15:07:12,076 - INFO - 🔍 Validando...
+2025-08-04 15:07:12,076 - INFO - 🔍 Validando datasets...
+2025-08-04 15:07:12,098 - INFO -    ✅ TRAIN - 1d:
+2025-08-04 15:07:12,098 - INFO -       Batch size: 16
+2025-08-04 15:07:12,098 - INFO -       Secuencia: 30 timesteps
+2025-08-04 15:07:12,098 - INFO -       Nodos: 18
+2025-08-04 15:07:12,098 - INFO -       Features: 13
+2025-08-04 15:07:12,098 - INFO -       Targets shape: torch.Size([16, 18])
+2025-08-04 15:07:12,098 - INFO -       Edge timesteps: 30
+2025-08-04 15:07:12,109 - INFO -    ✅ TRAIN - 3d:
+2025-08-04 15:07:12,109 - INFO -       Batch size: 16
+2025-08-04 15:07:12,109 - INFO -       Secuencia: 30 timesteps
+2025-08-04 15:07:12,109 - INFO -       Nodos: 18
+2025-08-04 15:07:12,109 - INFO -       Features: 13
+2025-08-04 15:07:12,109 - INFO -       Targets shape: torch.Size([16, 18])
+2025-08-04 15:07:12,109 - INFO -       Edge timesteps: 30
+2025-08-04 15:07:12,121 - INFO -    ✅ TRAIN - 7d:
+2025-08-04 15:07:12,121 - INFO -       Batch size: 16
+2025-08-04 15:07:12,121 - INFO -       Secuencia: 30 timesteps
+2025-08-04 15:07:12,121 - INFO -       Nodos: 18
+2025-08-04 15:07:12,121 - INFO -       Features: 13
+2025-08-04 15:07:12,121 - INFO -       Targets shape: torch.Size([16, 18])
+2025-08-04 15:07:12,121 - INFO -       Edge timesteps: 30
+2025-08-04 15:07:12,131 - INFO -    ✅ VAL - 1d:
+2025-08-04 15:07:12,131 - INFO -       Batch size: 16
+2025-08-04 15:07:12,131 - INFO -       Secuencia: 30 timesteps
+2025-08-04 15:07:12,131 - INFO -       Nodos: 18
+2025-08-04 15:07:12,131 - INFO -       Features: 13
+2025-08-04 15:07:12,131 - INFO -       Targets shape: torch.Size([16, 18])
+2025-08-04 15:07:12,131 - INFO -       Edge timesteps: 30
+2025-08-04 15:07:12,142 - INFO -    ✅ VAL - 3d:
+2025-08-04 15:07:12,142 - INFO -       Batch size: 16
+2025-08-04 15:07:12,142 - INFO -       Secuencia: 30 timesteps
+2025-08-04 15:07:12,142 - INFO -       Nodos: 18
+2025-08-04 15:07:12,142 - INFO -       Features: 13
+2025-08-04 15:07:12,142 - INFO -       Targets shape: torch.Size([16, 18])
+2025-08-04 15:07:12,142 - INFO -       Edge timesteps: 30
+2025-08-04 15:07:12,153 - INFO -    ✅ VAL - 7d:
+2025-08-04 15:07:12,153 - INFO -       Batch size: 16
+2025-08-04 15:07:12,153 - INFO -       Secuencia: 30 timesteps
+2025-08-04 15:07:12,153 - INFO -       Nodos: 18
+2025-08-04 15:07:12,153 - INFO -       Features: 13
+2025-08-04 15:07:12,153 - INFO -       Targets shape: torch.Size([16, 18])
+2025-08-04 15:07:12,153 - INFO -       Edge timesteps: 30
+2025-08-04 15:07:12,163 - INFO -    ✅ TEST - 1d:
+2025-08-04 15:07:12,163 - INFO -       Batch size: 16
+2025-08-04 15:07:12,163 - INFO -       Secuencia: 30 timesteps
+2025-08-04 15:07:12,163 - INFO -       Nodos: 18
+2025-08-04 15:07:12,163 - INFO -       Features: 13
+2025-08-04 15:07:12,163 - INFO -       Targets shape: torch.Size([16, 18])
+2025-08-04 15:07:12,163 - INFO -       Edge timesteps: 30
+2025-08-04 15:07:12,174 - INFO -    ✅ TEST - 3d:
+2025-08-04 15:07:12,174 - INFO -       Batch size: 16
+2025-08-04 15:07:12,174 - INFO -       Secuencia: 30 timesteps
+2025-08-04 15:07:12,174 - INFO -       Nodos: 18
+2025-08-04 15:07:12,174 - INFO -       Features: 13
+2025-08-04 15:07:12,174 - INFO -       Targets shape: torch.Size([16, 18])
+2025-08-04 15:07:12,174 - INFO -       Edge timesteps: 30
+2025-08-04 15:07:12,184 - INFO -    ✅ TEST - 7d:
+2025-08-04 15:07:12,184 - INFO -       Batch size: 16
+2025-08-04 15:07:12,184 - INFO -       Secuencia: 30 timesteps
+2025-08-04 15:07:12,185 - INFO -       Nodos: 18
+2025-08-04 15:07:12,185 - INFO -       Features: 13
+2025-08-04 15:07:12,185 - INFO -       Targets shape: torch.Size([16, 18])
+2025-08-04 15:07:12,185 - INFO -       Edge timesteps: 30
+2025-08-04 15:07:12,185 - INFO - ✅ Validación de datasets completada exitosamente
+2025-08-04 15:07:12,185 - INFO - 💾 Guardando...
+2025-08-04 15:07:12,186 - INFO - ✅ Scalers guardados en data/datasets/node_scalers.pt
+2025-08-04 15:07:12,186 - INFO - ✅ Configuración guardada en data/datasets/dataset_config.pt
